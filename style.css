@@ -1,0 +1,452 @@
+/*isha you should always style the u
+first*/
+
+body
+{
+background: whitesmoke;
+}
+/*{
+	padding: 0px;
+	margin: 0px;
+}*/
+
+nav
+{
+	background-color: #fffafa;
+	padding: 10px;
+	
+
+}
+nav ul{
+	display: flex;
+	list-style-type: none;
+	flex-wrap: wrap;
+	align-items: center;
+/*displays the items at center in ul*/
+	justify-content: center;
+	margin-top: 10px;
+}
+
+/*styling the logo part*/
+nav ul li.logo{
+/*flex is used to seperate the logo part
+form the other ul items*/
+	flex:1;
+	font-size: 30px;
+	font-weight: 400;
+	margin-left: 110px;
+}
+
+/*styling the items*/
+nav ul div.items{
+/*ele chai items like home n all haru lai 
+search bar sange seperate garyo*/
+	padding: 0 15px;
+/*ele chai nav bar lai proper size diyo ani
+items lai horizontal way ma display garayo
+*/
+	display: inline-flex;
+
+}
+
+/*styling the a's in items*/
+nav ul div.items a{
+	color: black;
+	font-size: 18px;
+/*provided gaps between the items 😁*/
+	padding: 0 10px;
+	margin-right: 100px;
+
+	
+}
+
+nav ul div.items a:hover{
+	color: cyan;
+}
+
+nav ul .search-icon{
+	height: 40px;
+	width: 240px;
+	display: flex;
+	background:white;
+	border-radius: 5px;
+
+}
+
+nav ul .search-icon input{
+	height: 100%;
+	width: 200px;
+	border:none;
+	outline: none;
+	padding: 0 10px;
+	color: #000;
+	font-size: 16px;
+	border-radius: 5px 0 0 5px;
+}
+nav ul .search-icon .icon{
+	height: 100%;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	border:1px solid #cccccc;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
+ nav ul .serach-icon .icon span{
+ 	color:#222222;
+ }
+
+nav ul .search-icon .icon:hover{
+background:#EE82EE;
+}
+
+/*@media screen and (min-width: 480px){
+	 .logo{
+		font-size: 4px;
+	}
+	.items{
+		font-size: 3px;
+	}
+}*/
+
+
+
+
+
+
+/*
+	nav{
+	/*padding: 10px 40px 10px 0px;
+*/
+	/*}
+	nav{
+		width: 100%;
+		text-align: center;
+		font-size: 12px;
+	}
+	nav ul li.logo{
+		display: none;
+	}
+	nav ul div.items{
+		/*flex:4;*/
+		/*font-size: 2px;
+	}
+	.slidefirst,.slide{
+		width: auto;
+	}
+
+}*/
+ 
+
+ div.menu-bar{
+	background:#d8bfd8;
+	text-align: center;
+	
+	width: auto;
+}
+
+
+
+.menu-bar ul{
+	display: inline-flex;
+	list-style-type: none;
+	color: black;
+
+
+}
+.menu-bar ul li:hover{
+	color: cyan;
+}
+.menu-bar ul li{
+	width: 120px;
+	text-align: center;
+	padding: 0 35px;
+
+}
+.menu-bar .fa{
+	margin-right: 8px;
+}
+
+/*Styling the electronics part*/
+.sub-menu-1{
+	display:none ;
+
+}
+.menu-bar ul li:hover .sub-menu-1{
+	display: block;
+	position: block;
+	background:inherit;
+	margin-top: 15px;
+	margin-left: -15px;
+	
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+	display: block;
+	margin: 5px;
+	margin-right: 5px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted black;
+	background: transparent;
+	border-radius: 0px;
+	text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+	color: #e0ffff;
+}
+
+/*Styling the womenswear*/
+.sub-menu-2{
+	display: none;
+}
+.menu-bar ul li:hover .sub-menu-2{
+	display: block;
+	position: block;
+	background:inherit;
+	margin-top: 15px;
+	margin-left: -15px;
+	
+}
+.menu-bar ul li:hover .sub-menu-2 ul{
+	display: block;
+	margin: 5px;
+	margin-right: 5px;
+}
+.menu-bar ul li:hover .sub-menu-2 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted black;
+	background: transparent;
+	border-radius: 0px;
+	text-align:left;
+	float: left;
+}
+.menu-bar ul li:hover .sub-menu-2 ul li a:hover{
+	color: black;
+}
+
+/*styling the menswear*/
+.sub-menu-3{
+	display: none;
+}
+.menu-bar ul li:hover .sub-menu-3{
+	display: block;
+	position: block;
+	background:inherit;
+	margin-top: 35px;
+	margin-left: -15px;
+	
+}
+.menu-bar ul li:hover .sub-menu-3 ul{
+	display: block;
+	margin: 5px;
+	margin-right: 5px;
+}
+.menu-bar ul li:hover .sub-menu-3 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted black;
+	background: transparent;
+	border-radius: 0px;
+	text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-3 ul li a:hover{
+	color: black;
+}
+
+/*styling thr furniture*/
+.sub-menu-4{
+	display: none;
+}
+.menu-bar ul li:hover .sub-menu-4{
+	display: block;
+	position: block;
+	background:inherit;
+	margin-top: 35px;
+	margin-left: -15px;
+	
+}
+.menu-bar ul li:hover .sub-menu-4 ul{
+	display: block;
+	margin: 5px;
+	margin-right: 5px;
+}
+.menu-bar ul li:hover .sub-menu-4 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted black;
+	background: transparent;
+	border-radius: 0px;
+	text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-4 ul li a:hover{
+	color: #e0ffff;
+}
+/*styling the homedecor*/
+.sub-menu-5{
+	display: none;
+}
+.menu-bar ul li:hover .sub-menu-5{
+	display: block;
+	position: block;
+	background:inherit;
+	margin-top: 35px;
+	margin-left: -15px;
+	
+}
+.menu-bar ul li:hover .sub-menu-5 ul{
+	display: block;
+	margin: 5px;
+	margin-right: 5px;
+}
+.menu-bar ul li:hover .sub-menu-5 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted black;
+	background: transparent;
+	border-radius: 0px;
+	text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-5 ul li a:hover{
+	color: #e0ffff;
+}
+
+/*css for slider images*/
+.slider{
+	width: auto;
+	height: 500px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.slides{
+	width: 500%;
+	height: 300px;
+	display: flex;
+}
+.slides input{
+	display: none;
+}
+.slide{
+	/width: 20%;
+	transition: 2s;
+}
+.slide img{
+	width: 100%;
+	height: 500px;
+}
+/*CSS for manual navigation */
+
+.navigation-manual{
+	position: absolute;
+	width: 100%;
+	margin-top: 210px;
+	display:flex;
+	justify-content: center;
+
+}
+.manual-btn{
+	border: 2px solid cyan;
+	padding: 4px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+.manual-btn:not(:last-child){
+	margin-right: 40px;
+}
+ .manual-btn:hover{
+ 	background: darkcyan;
+ } 
+ #radio1:checked~.first{
+ 	margin-left: 0;
+ }
+  
+  #radio2:checked~.first{
+ 	margin-left: -20%;
+ }
+  
+  #radio3:checked~.first{
+ 	margin-left: -40%;
+ }
+  
+  #radio4:checked~.first{
+ 	margin-left: -60%;
+ }
+
+/*CSS for hoverable images*/
+section{
+	margin-top: 240px;
+	width: 100%;
+	float: left;
+	background: #fffafa ;
+}
+.container{
+	display: flex;
+	width: 100%;
+}
+.container h5{
+ text-align: center;
+ display: center;
+
+}	
+
+/*the h5 text that is toppicks
+is not being displayed in the center*/
+.card
+{
+	background: #fffafa;
+	width: 100%;
+	height: 300px;
+	margin-top: 50px;
+	margin: 10px;
+	float: left;
+	border-radius: 20px;
+	color: green;
+	text-align: center;
+}
+.card-image{
+	background-color: #fffaf0;
+	height: 190px;
+	margin-bottom: 15px;
+	background-size:cover;
+	border-radius: 15px 15px 15px 13px;
+	width: 100%;
+}
+.car-1{
+	background-image: url("images/Ment.png");
+}
+.car-2{
+	background-image: url("images/paint.png");
+}
+.car-3{
+	background-image: url("images/Head.png");
+}
+.card:hover{
+	background-color: rgb(62, 62, 62);
+	color: whitesmoke;
+	cursor: pointer;
+	transform: scale(1.03);
+	transition: all 1s ease;
+}
+.container2{
+	margin-top: 10px;
+	display: flex;
+	width: 100%;
+}
+#foot{
+	margin-top: 10px;
+	display: inline-flex;
+ margin-left: 10px;
+ margin-right: 0px;
+ background: none;
+ color: black;
+
+}
+
